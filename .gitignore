@@ -1,0 +1,9 @@
+/tmp
+/node_modules
+/dist
+/.pnp
+.pnp.js
+.env
+
+.vscode/*
+.idea/*
