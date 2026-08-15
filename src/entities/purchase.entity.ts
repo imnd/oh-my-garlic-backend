@@ -19,10 +19,10 @@ export class Purchase {
   @Column('decimal', { precision: 12, scale: 4 })
   quantity: number;
 
-  @Column('decimal', { precision: 12, scale: 4 })
+  @Column('int')
   unitPrice: number;
 
-  @Column('decimal', { precision: 12, scale: 4 })
+  @Column('int')
   totalCost: number;
 
   @Column()
