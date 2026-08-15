@@ -47,8 +47,8 @@ CREATE TABLE IF NOT EXISTS purchases (
     ingredient_id INTEGER NOT NULL REFERENCES ingredients(id) ON DELETE CASCADE,
     date_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     quantity DECIMAL(12,4) NOT NULL,
-    unit_price DECIMAL(12,4) NOT NULL,
-    total_cost DECIMAL(12,4) NOT NULL,
+    unit_price INTEGER NOT NULL,
+    total_cost INTEGER NOT NULL,
     payment_method TEXT NOT NULL,
     comments TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP

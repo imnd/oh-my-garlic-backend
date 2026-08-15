@@ -101,8 +101,8 @@ export class ErpService {
     }
 
     const qty = Number(data.quantity);
-    const price = Number(data.unitPrice);
-    const total = qty * price;
+    const price = Math.round(Number(data.unitPrice));
+    const total = Math.round(qty * price);
 
     const oldStock = Number(ingredient.stock);
     const oldAvg = Number(ingredient.averagePrice);
